@@ -1,0 +1,406 @@
+NIKO-ARMS
+Семантическое ядро: 167 запросов
+Дата: 21.10.2026
+
+112 небрендовых товарных запросов, 35 брендовых и 20 фраз с названиями городов.
+30 групп по назначению товаров и целевым страницам.
+Частотность и сложность запросов не измерялись.
+Запросы загружены в Топвизор. Проверки позиций пока не запускались.
+
+Общее ядро предназначено для отдельных проверок в Сургуте и Краснодаре.
+Геофразы — дополнительный набор: по 10 фраз с названием каждого города.
+Название города в группе описывает смысл запроса и не ограничивает регион проверки.
+
+Каталог и производство (5)
+1. тактическое снаряжение купить
+   Целевая страница: https://niko-a.ru/
+2. магазин тактического снаряжения
+   Целевая страница: https://niko-a.ru/
+3. тактическое снаряжение от производителя
+   Целевая страница: https://niko-a.ru/
+4. производитель тактического снаряжения
+   Целевая страница: https://niko-a.ru/
+5. подсумки от производителя
+   Целевая страница: https://niko-a.ru/
+
+Подсумки и модули (4)
+6. тактические подсумки
+   Целевая страница: https://niko-a.ru/catalog/podsumki-i-moduli/
+7. тактические подсумки купить
+   Целевая страница: https://niko-a.ru/catalog/podsumki-i-moduli/
+8. подсумки molle купить
+   Целевая страница: https://niko-a.ru/catalog/podsumki-i-moduli/
+9. подсумки из кордуры
+   Целевая страница: https://niko-a.ru/catalog/podsumki-i-moduli/
+
+Медицинские подсумки (6)
+10. медицинский подсумок купить
+   Целевая страница: https://niko-a.ru/catalog/takticheskaya-meditsina/
+11. подсумок для аптечки
+   Целевая страница: https://niko-a.ru/catalog/takticheskaya-meditsina/
+12. тактическая аптечка без наполнения
+   Целевая страница: https://niko-a.ru/catalog/takticheskaya-meditsina/
+13. медицинский подсумок molle
+   Целевая страница: https://niko-a.ru/catalog/takticheskaya-meditsina/
+14. подсумок для индивидуальной аптечки
+   Целевая страница: https://niko-a.ru/catalog/takticheskaya-meditsina/
+15. подсумок ifak
+   Целевая страница: https://niko-a.ru/catalog/takticheskaya-meditsina/
+
+Туннельная аптечка (5)
+16. туннельная аптечка
+   Целевая страница: https://niko-a.ru/catalog/tunnelnaya-aptechka/
+17. туннельная аптечка купить
+   Целевая страница: https://niko-a.ru/catalog/tunnelnaya-aptechka/
+18. тактическая туннельная аптечка
+   Целевая страница: https://niko-a.ru/catalog/tunnelnaya-aptechka/
+19. туннельный медицинский подсумок
+   Целевая страница: https://niko-a.ru/catalog/tunnelnaya-aptechka/
+20. туннельная аптечка без наполнения
+   Целевая страница: https://niko-a.ru/catalog/tunnelnaya-aptechka/
+
+Бренд — товары (30)
+21. туннельная аптечка niko arms
+   Целевая страница: https://niko-a.ru/catalog/tunnelnaya-aptechka/
+22. аптечка топ niko arms
+   Целевая страница: https://niko-a.ru/catalog/vytyazhnaya-aptechka-top/
+23. обложка для паспорта niko arms 2.0
+   Целевая страница: https://niko-a.ru/catalog/oblozhka-dlya-pasporta-2-0/
+24. туннельная аптечка нико армс
+   Целевая страница: https://niko-a.ru/catalog/tunnelnaya-aptechka/
+25. обложка для паспорта 2.0 нико армс
+   Целевая страница: https://niko-a.ru/catalog/oblozhka-dlya-pasporta-2-0/
+26. подсумок под рацию нико армс
+   Целевая страница: https://niko-a.ru/catalog/podsumok-pod-ratsiyu/
+27. вытяжной подсумок нико армс
+   Целевая страница: https://niko-a.ru/catalog/vytyazhnoy-podsumok/
+28. обложка для удостоверений нико армс
+   Целевая страница: https://niko-a.ru/catalog/oblozhka-dlya-udostovereniy/
+29. мини-подсумок для турникета нико армс
+   Целевая страница: https://niko-a.ru/catalog/mini-podsumok-dlya-turniketa/
+30. поясная аптечка edc нико армс
+   Целевая страница: https://niko-a.ru/catalog/poyasnaya-aptechka-edc/
+31. обложка для военного билета нико армс
+   Целевая страница: https://niko-a.ru/catalog/oblozhka-dlya-voennogo-bileta/
+32. фиксатор для турникета нико армс
+   Целевая страница: https://niko-a.ru/catalog/fiksator-dlya-turniketa/
+33. держатель на липучке нико армс
+   Целевая страница: https://niko-a.ru/catalog/derzhatel-na-lipuchke/
+34. вытяжная аптечка топ нико армс
+   Целевая страница: https://niko-a.ru/catalog/vytyazhnaya-aptechka-top/
+35. микро-крепление со шнуром нико армс
+   Целевая страница: https://niko-a.ru/catalog/mikro-kreplenie-so-shnurom/
+36. поясная аптечка edc 2.0 нико армс
+   Целевая страница: https://niko-a.ru/catalog/poyasnaya-aptechka-edc-2-0/
+37. турникетный подсумок андреевский нико армс
+   Целевая страница: https://niko-a.ru/catalog/turniketnyy-podsumok-andreevskiy/
+38. фиксатор для турникета 4 штуки нико армс
+   Целевая страница: https://niko-a.ru/catalog/fiksator-dlya-turniketa-4-sht/
+39. обложка офицерского военного билета нико армс
+   Целевая страница: https://niko-a.ru/catalog/oblozhka-ofitserskogo-voennogo-bileta/
+40. фиксатор для турникета 2 штуки нико армс
+   Целевая страница: https://niko-a.ru/catalog/fiksator-dlya-turniketa-2-sht/
+41. кассетный большой подсумок нико армс
+   Целевая страница: https://niko-a.ru/catalog/kassetnyy-bolshoy-podsumok/
+42. обложка для паспорта нико армс
+   Целевая страница: https://niko-a.ru/catalog/oblozhka-dlya-pasporta/
+43. аптечка на ногу edc нико армс
+   Целевая страница: https://niko-a.ru/catalog/aptechka-na-nogu-edc/
+44. подсумок для жгута нико армс
+   Целевая страница: https://niko-a.ru/catalog/podsumok-dlya-zhguta/
+45. кровоостанавливающий жгут серёгина нико армс
+   Целевая страница: https://niko-a.ru/catalog/krovoostanavlivayushchiy-zhgut-seregina/
+46. обложка военного билета офицера запаса нико армс
+   Целевая страница: https://niko-a.ru/catalog/oblozhka-voennogo-bileta-ofitsera-zapasa/
+47. картхолдер милитари нико армс
+   Целевая страница: https://niko-a.ru/catalog/kartholder-militari/
+48. s-образное нано-крепление нико армс
+   Целевая страница: https://niko-a.ru/catalog/s-obraznoe-nano-kreplenie/
+49. органайзер для документов нико армс
+   Целевая страница: https://niko-a.ru/catalog/organayzer-dlya-dokumentov/
+50. подсумок эвакуационной стропы нико армс
+   Целевая страница: https://niko-a.ru/catalog/podsumok-evakuatsionnoy-stropy/
+
+Поясные аптечки EDC (6)
+51. поясная аптечка edc
+   Целевая страница: https://niko-a.ru/catalog/poyasnaya-aptechka-edc/
+52. поясная аптечка купить
+   Целевая страница: https://niko-a.ru/catalog/poyasnaya-aptechka-edc/
+53. подсумок для аптечки на пояс
+   Целевая страница: https://niko-a.ru/catalog/poyasnaya-aptechka-edc/
+54. поясная аптечка без наполнения
+   Целевая страница: https://niko-a.ru/catalog/poyasnaya-aptechka-edc/
+55. поясная аптечка edc 2.0
+   Целевая страница: https://niko-a.ru/catalog/poyasnaya-aptechka-edc-2-0/
+56. аптечка edc 2.0 купить
+   Целевая страница: https://niko-a.ru/catalog/poyasnaya-aptechka-edc-2-0/
+
+Вытяжная аптечка ТОП (3)
+57. вытяжная аптечка топ
+   Целевая страница: https://niko-a.ru/catalog/vytyazhnaya-aptechka-top/
+58. вытяжная аптечка купить
+   Целевая страница: https://niko-a.ru/catalog/vytyazhnaya-aptechka-top/
+59. вытяжная аптечка без наполнения
+   Целевая страница: https://niko-a.ru/catalog/vytyazhnaya-aptechka-top/
+
+Аптечка на ногу (5)
+60. аптечка на ногу
+   Целевая страница: https://niko-a.ru/catalog/aptechka-na-nogu-edc/
+61. аптечка на ногу edc
+   Целевая страница: https://niko-a.ru/catalog/aptechka-na-nogu-edc/
+62. набедренная аптечка купить
+   Целевая страница: https://niko-a.ru/catalog/aptechka-na-nogu-edc/
+63. набедренный медицинский подсумок
+   Целевая страница: https://niko-a.ru/catalog/aptechka-na-nogu-edc/
+64. набедренная аптечка без наполнения
+   Целевая страница: https://niko-a.ru/catalog/aptechka-na-nogu-edc/
+
+Мини-подсумок для турникета (3)
+65. мини подсумок для турникета
+   Целевая страница: https://niko-a.ru/catalog/mini-podsumok-dlya-turniketa/
+66. мини подсумок для жгута
+   Целевая страница: https://niko-a.ru/catalog/mini-podsumok-dlya-turniketa/
+67. компактный подсумок для турникета
+   Целевая страница: https://niko-a.ru/catalog/mini-podsumok-dlya-turniketa/
+
+Подсумок Андреевский (2)
+68. турникетный подсумок андреевский
+   Целевая страница: https://niko-a.ru/catalog/turniketnyy-podsumok-andreevskiy/
+69. подсумок андреевский купить
+   Целевая страница: https://niko-a.ru/catalog/turniketnyy-podsumok-andreevskiy/
+
+Подсумок для жгута (4)
+70. подсумок для жгута
+   Целевая страница: https://niko-a.ru/catalog/podsumok-dlya-zhguta/
+71. подсумок для жгута купить
+   Целевая страница: https://niko-a.ru/catalog/podsumok-dlya-zhguta/
+72. чехол для кровоостанавливающего жгута
+   Целевая страница: https://niko-a.ru/catalog/podsumok-dlya-zhguta/
+73. закрытый подсумок для жгута
+   Целевая страница: https://niko-a.ru/catalog/podsumok-dlya-zhguta/
+
+Вытяжной подсумок (5)
+74. вытяжной подсумок
+   Целевая страница: https://niko-a.ru/catalog/vytyazhnoy-podsumok/
+75. вытяжной подсумок для турникета
+   Целевая страница: https://niko-a.ru/catalog/vytyazhnoy-podsumok/
+76. подсумок для турникета купить
+   Целевая страница: https://niko-a.ru/catalog/vytyazhnoy-podsumok/
+77. подсумок для турникета cat
+   Целевая страница: https://niko-a.ru/catalog/vytyazhnoy-podsumok/
+78. подсумок для турникета softt
+   Целевая страница: https://niko-a.ru/catalog/vytyazhnoy-podsumok/
+
+Жгут Серёгина (3)
+79. жгут серегина
+   Целевая страница: https://niko-a.ru/catalog/krovoostanavlivayushchiy-zhgut-seregina/
+80. жгут серегина купить
+   Целевая страница: https://niko-a.ru/catalog/krovoostanavlivayushchiy-zhgut-seregina/
+81. кровоостанавливающий жгут серегина
+   Целевая страница: https://niko-a.ru/catalog/krovoostanavlivayushchiy-zhgut-seregina/
+
+Подсумок для рации (6)
+82. подсумок под рацию
+   Целевая страница: https://niko-a.ru/catalog/podsumok-pod-ratsiyu/
+83. подсумок для рации купить
+   Целевая страница: https://niko-a.ru/catalog/podsumok-pod-ratsiyu/
+84. тактический подсумок для рации
+   Целевая страница: https://niko-a.ru/catalog/podsumok-pod-ratsiyu/
+85. подсумок для рации кордура
+   Целевая страница: https://niko-a.ru/catalog/podsumok-pod-ratsiyu/
+86. универсальный подсумок для рации
+   Целевая страница: https://niko-a.ru/catalog/podsumok-pod-ratsiyu/
+87. подсумок для детектора булат
+   Целевая страница: https://niko-a.ru/catalog/podsumok-pod-ratsiyu/
+
+Кассетный подсумок (4)
+88. кассетный подсумок
+   Целевая страница: https://niko-a.ru/catalog/kassetnyy-bolshoy-podsumok/
+89. кассетный подсумок купить
+   Целевая страница: https://niko-a.ru/catalog/kassetnyy-bolshoy-podsumok/
+90. большой медицинский подсумок
+   Целевая страница: https://niko-a.ru/catalog/kassetnyy-bolshoy-podsumok/
+91. медицинский подсумок с органайзером
+   Целевая страница: https://niko-a.ru/catalog/kassetnyy-bolshoy-podsumok/
+
+Эвакуационная стропа с подсумком (5)
+92. эвакуационная стропа купить
+   Целевая страница: https://niko-a.ru/catalog/podsumok-evakuatsionnoy-stropy/
+93. эвакуационная стропа 7 метров
+   Целевая страница: https://niko-a.ru/catalog/podsumok-evakuatsionnoy-stropy/
+94. подсумок для эвакуационной стропы
+   Целевая страница: https://niko-a.ru/catalog/podsumok-evakuatsionnoy-stropy/
+95. эвакуационная стропа в подсумке
+   Целевая страница: https://niko-a.ru/catalog/podsumok-evakuatsionnoy-stropy/
+96. стропа для эвакуации раненого
+   Целевая страница: https://niko-a.ru/catalog/podsumok-evakuatsionnoy-stropy/
+
+Фиксаторы турникета (8)
+97. фиксатор для турникета
+   Целевая страница: https://niko-a.ru/catalog/fiksator-dlya-turniketa/
+98. фиксатор для турникета купить
+   Целевая страница: https://niko-a.ru/catalog/fiksator-dlya-turniketa/
+99. держатель для медицинского турникета
+   Целевая страница: https://niko-a.ru/catalog/fiksator-dlya-turniketa/
+100. крепление для турникета molle
+   Целевая страница: https://niko-a.ru/catalog/fiksator-dlya-turniketa/
+101. крепление для жгута на ремень
+   Целевая страница: https://niko-a.ru/catalog/fiksator-dlya-turniketa/
+102. держатель для кровоостанавливающего жгута
+   Целевая страница: https://niko-a.ru/catalog/fiksator-dlya-turniketa/
+103. фиксатор для турникета 2 штуки
+   Целевая страница: https://niko-a.ru/catalog/fiksator-dlya-turniketa-2-sht/
+104. фиксатор для турникета 4 штуки
+   Целевая страница: https://niko-a.ru/catalog/fiksator-dlya-turniketa-4-sht/
+
+Держатель на липучке (3)
+105. держатель для турникета на липучке
+   Целевая страница: https://niko-a.ru/catalog/derzhatel-na-lipuchke/
+106. держатель для жгута на липучке
+   Целевая страница: https://niko-a.ru/catalog/derzhatel-na-lipuchke/
+107. крепление для турникета velcro
+   Целевая страница: https://niko-a.ru/catalog/derzhatel-na-lipuchke/
+
+Микро-крепление со шнуром (4)
+108. микро крепление molle
+   Целевая страница: https://niko-a.ru/catalog/mikro-kreplenie-so-shnurom/
+109. крепление для ипп molle
+   Целевая страница: https://niko-a.ru/catalog/mikro-kreplenie-so-shnurom/
+110. крепление мультитула на molle
+   Целевая страница: https://niko-a.ru/catalog/mikro-kreplenie-so-shnurom/
+111. крепление для жгута эсмарха molle
+   Целевая страница: https://niko-a.ru/catalog/mikro-kreplenie-so-shnurom/
+
+S-образное крепление (4)
+112. s образное крепление molle
+   Целевая страница: https://niko-a.ru/catalog/s-obraznoe-nano-kreplenie/
+113. держатель фонаря molle
+   Целевая страница: https://niko-a.ru/catalog/s-obraznoe-nano-kreplenie/
+114. фиксатор провода molle
+   Целевая страница: https://niko-a.ru/catalog/s-obraznoe-nano-kreplenie/
+115. эластичное крепление на molle
+   Целевая страница: https://niko-a.ru/catalog/s-obraznoe-nano-kreplenie/
+
+Обложки для паспорта (6)
+116. обложка для паспорта купить
+   Целевая страница: https://niko-a.ru/catalog/oblozhka-dlya-pasporta/
+117. обложка на паспорт кордура
+   Целевая страница: https://niko-a.ru/catalog/oblozhka-dlya-pasporta/
+118. обложка для паспорта милитари
+   Целевая страница: https://niko-a.ru/catalog/oblozhka-dlya-pasporta/
+119. обложка для паспорта с отделением для карт
+   Целевая страница: https://niko-a.ru/catalog/oblozhka-dlya-pasporta/
+120. обложка для паспорта тканевая
+   Целевая страница: https://niko-a.ru/catalog/oblozhka-dlya-pasporta/
+121. обложка на паспорт камуфляж
+   Целевая страница: https://niko-a.ru/catalog/oblozhka-dlya-pasporta/
+
+Обложки для военного билета (4)
+122. обложка для военного билета
+   Целевая страница: https://niko-a.ru/catalog/oblozhka-dlya-voennogo-bileta/
+123. обложка для военного билета купить
+   Целевая страница: https://niko-a.ru/catalog/oblozhka-dlya-voennogo-bileta/
+124. обложка для военного билета кордура
+   Целевая страница: https://niko-a.ru/catalog/oblozhka-dlya-voennogo-bileta/
+125. обложка для военного билета камуфляж
+   Целевая страница: https://niko-a.ru/catalog/oblozhka-dlya-voennogo-bileta/
+
+Офицерские обложки (2)
+126. обложка для офицерского военного билета
+   Целевая страница: https://niko-a.ru/catalog/oblozhka-ofitserskogo-voennogo-bileta/
+127. обложка для военного билета офицера купить
+   Целевая страница: https://niko-a.ru/catalog/oblozhka-ofitserskogo-voennogo-bileta/
+
+Обложки офицера запаса (2)
+128. обложка для военного билета офицера запаса
+   Целевая страница: https://niko-a.ru/catalog/oblozhka-voennogo-bileta-ofitsera-zapasa/
+129. обложка на военный билет офицера запаса купить
+   Целевая страница: https://niko-a.ru/catalog/oblozhka-voennogo-bileta-ofitsera-zapasa/
+
+Обложки для удостоверений (3)
+130. обложка для удостоверения купить
+   Целевая страница: https://niko-a.ru/catalog/oblozhka-dlya-udostovereniy/
+131. обложка для служебного удостоверения
+   Целевая страница: https://niko-a.ru/catalog/oblozhka-dlya-udostovereniy/
+132. обложка для удостоверения кордура
+   Целевая страница: https://niko-a.ru/catalog/oblozhka-dlya-udostovereniy/
+
+Органайзер для документов (4)
+133. органайзер для документов купить
+   Целевая страница: https://niko-a.ru/catalog/organayzer-dlya-dokumentov/
+134. органайзер для паспорта и документов
+   Целевая страница: https://niko-a.ru/catalog/organayzer-dlya-dokumentov/
+135. обложка для паспорта прав и стс
+   Целевая страница: https://niko-a.ru/catalog/organayzer-dlya-dokumentov/
+136. тактический органайзер для документов
+   Целевая страница: https://niko-a.ru/catalog/organayzer-dlya-dokumentov/
+
+Картхолдер милитари (6)
+137. картхолдер милитари купить
+   Целевая страница: https://niko-a.ru/catalog/kartholder-militari/
+138. картхолдер кордура
+   Целевая страница: https://niko-a.ru/catalog/kartholder-militari/
+139. картхолдер на 4 карты
+   Целевая страница: https://niko-a.ru/catalog/kartholder-militari/
+140. чехол для банковских карт из ткани
+   Целевая страница: https://niko-a.ru/catalog/kartholder-militari/
+141. держатель банковских карт милитари
+   Целевая страница: https://niko-a.ru/catalog/kartholder-militari/
+142. картхолдер тактический
+   Целевая страница: https://niko-a.ru/catalog/kartholder-militari/
+
+Бренд — общие (5)
+143. niko arms
+   Целевая страница: https://niko-a.ru/
+144. нико армс
+   Целевая страница: https://niko-a.ru/
+145. niko arms официальный сайт
+   Целевая страница: https://niko-a.ru/
+146. niko arms тактическое снаряжение
+   Целевая страница: https://niko-a.ru/
+147. niko arms подсумки
+   Целевая страница: https://niko-a.ru/
+
+Геозапросы — Сургут (10)
+148. тактическое снаряжение сургут
+   Целевая страница: https://niko-a.ru/
+149. тактические подсумки купить сургут
+   Целевая страница: https://niko-a.ru/catalog/podsumki-i-moduli/
+150. медицинский подсумок купить сургут
+   Целевая страница: https://niko-a.ru/catalog/takticheskaya-meditsina/
+151. туннельная аптечка купить сургут
+   Целевая страница: https://niko-a.ru/catalog/tunnelnaya-aptechka/
+152. подсумок для турникета купить сургут
+   Целевая страница: https://niko-a.ru/catalog/vytyazhnoy-podsumok/
+153. подсумок для рации купить сургут
+   Целевая страница: https://niko-a.ru/catalog/podsumok-pod-ratsiyu/
+154. фиксатор для турникета купить сургут
+   Целевая страница: https://niko-a.ru/catalog/fiksator-dlya-turniketa/
+155. эвакуационная стропа купить сургут
+   Целевая страница: https://niko-a.ru/catalog/podsumok-evakuatsionnoy-stropy/
+156. обложка для военного билета купить сургут
+   Целевая страница: https://niko-a.ru/catalog/oblozhka-dlya-voennogo-bileta/
+157. органайзер для документов купить сургут
+   Целевая страница: https://niko-a.ru/catalog/organayzer-dlya-dokumentov/
+
+Геозапросы — Краснодар (10)
+158. тактическое снаряжение краснодар
+   Целевая страница: https://niko-a.ru/
+159. тактические подсумки купить краснодар
+   Целевая страница: https://niko-a.ru/catalog/podsumki-i-moduli/
+160. медицинский подсумок купить краснодар
+   Целевая страница: https://niko-a.ru/catalog/takticheskaya-meditsina/
+161. туннельная аптечка купить краснодар
+   Целевая страница: https://niko-a.ru/catalog/tunnelnaya-aptechka/
+162. подсумок для турникета купить краснодар
+   Целевая страница: https://niko-a.ru/catalog/vytyazhnoy-podsumok/
+163. подсумок для рации купить краснодар
+   Целевая страница: https://niko-a.ru/catalog/podsumok-pod-ratsiyu/
+164. фиксатор для турникета купить краснодар
+   Целевая страница: https://niko-a.ru/catalog/fiksator-dlya-turniketa/
+165. эвакуационная стропа купить краснодар
+   Целевая страница: https://niko-a.ru/catalog/podsumok-evakuatsionnoy-stropy/
+166. обложка для военного билета купить краснодар
+   Целевая страница: https://niko-a.ru/catalog/oblozhka-dlya-voennogo-bileta/
+167. органайзер для документов купить краснодар
+   Целевая страница: https://niko-a.ru/catalog/organayzer-dlya-dokumentov/
