@@ -1,0 +1,85 @@
+.results-heading{padding:40px 0 28px}
+.results-heading h2{font-size:32px;line-height:1.4}
+.results-heading p{font-size:var(--intro-size);line-height:1.85;max-width:75ch;margin-top:20px}
+.engine-kpi-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-bottom:40px;--searcher-yandex:#bd2f1b;--searcher-google:#1b5fbc}
+.engine-kpi-card{padding:32px 36px;min-width:0}
+.engine-kpi-card .searcher-name{font-size:26px;line-height:1.4;font-weight:600;margin-bottom:28px}
+.engine-kpi-card.engine-yandex .searcher-name{color:var(--searcher-yandex)}
+.engine-kpi-card.engine-google .searcher-name{color:var(--searcher-google)}
+.engine-kpi-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.engine-kpi-metric{min-width:0}
+.engine-kpi-metric+.engine-kpi-metric{border-left:1px solid var(--line);padding-left:28px}
+.engine-kpi-metric h4{margin:0 0 16px;font-size:20px;font-weight:500;line-height:1.5}
+.engine-kpi-metric .kpi-values .number{font-size:48px;font-variant-numeric:tabular-nums}
+.engine-kpi-metric .kpi-values .number.before{font-size:28px}
+.engine-kpi-metric .kpi-values .number.neutral{color:var(--ink)}
+.engine-kpi-metric .kpi-count{font-size:16px;line-height:1.7;margin-top:14px}
+.competitors-card{padding:36px;margin-bottom:30px;min-width:0}
+.competitors-table{width:100%;border-collapse:collapse;table-layout:fixed;margin-top:28px;font-size:var(--small-size)}
+.competitors-table th,.competitors-table td{padding:18px 14px;border-bottom:1px solid var(--line);text-align:center;vertical-align:middle;overflow-wrap:anywhere}
+.competitors-table thead th{font-size:var(--small-size);font-weight:600;color:var(--muted);background:#f8f9fc}
+.competitors-table thead th:first-child{width:32%;text-align:left}
+.competitors-table tbody th{text-align:left;font-weight:500}
+.competitors-table tbody th a{display:inline-flex;align-items:center;gap:8px;max-width:100%;text-decoration:none}
+.competitors-table tbody th a:hover{text-decoration:underline}
+.competitors-table tbody th svg{width:18px;height:18px}
+.competitors-table tr.is-project{background:var(--accent-soft)}
+.competitors-table tr.is-project th,.competitors-table tr.is-project .comparison-value{color:var(--accent);font-weight:600}
+.comparison-value{display:block;font-size:26px;line-height:1.5;font-weight:500}
+.comparison-share{display:block;font-size:var(--meta-size);color:var(--muted);margin-top:3px}
+.comparison-label{display:none}
+.competitors-table .searcher-yandex{color:#bd2f1b;background:#fff6f3;font-size:21px}
+.competitors-table .searcher-google{color:#1b5fbc;background:#f3f7ff;font-size:21px}
+.competitors-table .searcher-yandex-sub{background:#fff6f3}
+.competitors-table .searcher-google-sub{background:#f3f7ff}
+.competitors-table .searcher-divider{border-left:1px solid #dce1ea}
+.comparison-value{font-variant-numeric:tabular-nums}
+.positions-table th.engine-yandex.engine-title{color:#bd2f1b;background:#fff6f3}
+.positions-table th.engine-google.engine-title{color:#1b5fbc;background:#f3f7ff}
+.positions-table td{font-variant-numeric:tabular-nums}
+.competitor-filter{min-width:235px}
+.positions-table.initial-positions{min-width:0;table-layout:fixed}
+.positions-table.initial-positions .query-col{width:60%}
+.positions-table.initial-positions .rank-col{width:20%}
+.positions-table.initial-positions.has-competitors .query-col{width:46%}
+.positions-table.initial-positions.has-competitors .rank-col{width:13.5%}
+.initial-positions th,.initial-positions td{overflow-wrap:anywhere}
+.initial-positions .competitor-rank{color:var(--muted)}
+.rank-label-short{display:none}
+@media(max-width:900px){.engine-kpi-grid{gap:24px}.engine-kpi-card{padding:28px}.engine-kpi-metrics{gap:20px}.engine-kpi-metric+.engine-kpi-metric{padding-left:20px}.competitors-card{padding:28px}.competitors-table thead th:first-child{width:34%}.competitors-table th,.competitors-table td{padding:18px 10px}.comparison-value{font-size:24px}}
+@media(max-width:760px){.engine-kpi-grid{grid-template-columns:1fr}}
+@media(max-width:600px){
+  .results-heading{padding:32px 0 24px}
+  .results-heading h2{font-size:28px}
+  .engine-kpi-grid{margin-bottom:32px}
+  .engine-kpi-card{padding:28px 24px}
+  .engine-kpi-card .searcher-name{font-size:24px;margin-bottom:24px}
+  .engine-kpi-metric h4{font-size:18px;margin-bottom:14px}
+  .engine-kpi-metric .kpi-values .number{font-size:44px}
+  .competitors-card{padding:28px 24px}
+  .competitors-table{display:block;margin-top:24px}
+  .competitors-table thead{display:none}
+  .competitors-table tbody{display:grid;gap:24px}
+  .competitors-table tr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 24px;padding:22px 0;border-bottom:1px solid var(--line)}
+  .competitors-table tr.is-project{padding:22px 16px;border-radius:10px}
+  .competitors-table tbody th{grid-column:1/-1;font-size:18px}
+  .competitors-table th,.competitors-table td{padding:0;border:0;text-align:left;min-width:0}
+  .comparison-label{display:block;font-size:15px;color:var(--muted);line-height:1.6;min-height:3.2em}
+  .comparison-value{font-size:30px;margin-top:8px}
+  .comparison-share{font-size:15px}
+  .competitors-table .searcher-divider{border-left:0}
+  .comparison-yandex .comparison-label{color:#bd2f1b}
+  .comparison-google .comparison-label{color:#1b5fbc}
+  .competitors-table .comparison-google{border-top:1px solid var(--line);padding-top:18px}
+  .mobile-engine button[data-engine=yandex][aria-pressed=true]{color:#bd2f1b;background:#fff6f3;border-color:#d9a99c}
+  .mobile-engine button[data-engine=google][aria-pressed=true]{color:#1b5fbc;background:#f3f7ff;border-color:#a7c1e6}
+  .competitor-filter{min-width:0}
+  .positions-table.initial-positions .query-col{width:68%}
+  .positions-table.initial-positions .rank-col{width:32%}
+  .positions-table.initial-positions.has-competitors .query-col{width:50%}
+  .positions-table.initial-positions.has-competitors .rank-col{width:25%}
+  .positions-table.initial-positions th,.positions-table.initial-positions td{padding-left:6px;padding-right:6px}
+  .positions-table.initial-positions th.query-heading,.positions-table.initial-positions td:first-child{padding-left:8px;padding-right:12px}
+  .rank-label-long{display:none}
+  .rank-label-short{display:inline}
+}

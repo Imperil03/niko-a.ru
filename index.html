@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="color-scheme" content="light">
+  <title>Отчёт по продвижению сайта NIKO-ARMS</title>
+  <link rel="preload" href="assets/fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=cc033ab2f32f">
+  <link rel="stylesheet" href="results.css?v=2985867da92b">
+  <link rel="stylesheet" href="adapt.css?v=df2a2329f8e4">
+  <script src="report-data.js?v=363a179aac83" defer></script>
+  <script src="model.js?v=5a4406d4136c" defer></script>
+  <script src="app.js?v=d826d76fcd81" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#report-content">К содержанию отчёта</a>
+  <div class="report-shell">
+    <header class="report-header">
+      <div class="report-heading"><h1>Отчёт по продвижению сайта <span id="report-client">«NIKO-ARMS»</span></h1></div>
+      <div class="month-picker"><label for="report-month">Месяц отчёта</label><div class="select-wrap"><select id="report-month" aria-label="Месяц отчёта"></select><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></svg></div></div>
+    </header>
+    <nav class="report-nav" aria-label="Разделы отчёта">
+      <div class="tabs" role="tablist" aria-label="Отчёт по продвижению сайта">
+        <button type="button" role="tab" id="tab-results" aria-controls="panel-results" aria-selected="true" tabindex="0">Результаты</button>
+        <button type="button" role="tab" id="tab-works" aria-controls="panel-works" aria-selected="false" tabindex="-1">Работы <span id="work-count" class="tab-count" hidden></span></button>
+      </div>
+    </nav>
+    <main id="report-content">
+      <section id="panel-results" role="tabpanel" aria-labelledby="tab-results" tabindex="-1"><p class="loading-message" role="status">Загружаем отчёт…</p></section>
+      <section id="panel-works" role="tabpanel" aria-labelledby="tab-works" tabindex="-1" hidden></section>
+      <noscript><p class="notice">Для переключения месяцев и просмотра отчёта включите JavaScript в браузере.</p></noscript>
+    </main>
+    <footer class="report-footer"><a id="site-link" href="https://niko-a.ru/" target="_blank" rel="noopener noreferrer">niko-a.ru <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></svg></a><span id="period-label">Октябрь 2026</span></footer>
+  </div>
+  <dialog id="detail-dialog" class="detail-dialog" aria-labelledby="detail-title">
+    <div class="drawer-header"><div><h2 id="detail-title"></h2><p id="detail-meta"></p></div><button type="button" id="close-detail" class="icon-button" aria-label="Закрыть подробности" autofocus><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+    <div id="detail-body" class="drawer-body"></div>
+  </dialog>
+  <p id="announcement" class="sr-only" role="status" aria-live="polite"></p>
+</body>
+</html>
