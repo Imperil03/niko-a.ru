@@ -4,6 +4,9 @@
 .actual-result>:not(.detail-resource)+.detail-resource{margin-top:28px}
 .evidence-url-map{table-layout:fixed;min-width:0}
 .evidence-url-map th:first-child{width:22%}
+.evidence-table.evidence-compact{table-layout:fixed}
+.evidence-table.evidence-compact th:first-child{width:36%}
+.evidence-compact th:not(:first-child),.evidence-compact td:not(:first-child){white-space:normal}
 @media(max-width:600px){
   .evidence-url-map,.evidence-url-map tbody,.evidence-url-map tr,.evidence-url-map td{display:block;width:100%}
   .evidence-url-map thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
