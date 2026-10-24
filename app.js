@@ -15,6 +15,7 @@
     chart:'<path d="M4 3v17h17M9 15v-4m5 4V6m5 9V9"/>', up:'<path d="M12 20V4m-6 6 6-6 6 6"/>', down:'<path d="M12 4v16m-6-6 6 6 6-6"/>'
   }[name] || ''}</svg>`;
   const tabs = ['results','works'], months = M.months(data), dialog = $('detail-dialog');
+  const mergedWorkIds = new Map([['rank-tracking-setup','analytics-and-search-verification'],['catalog-import-seo-preservation','page-metadata-optimization'],['product-description-corrections','page-metadata-optimization']]);
   const hasWorkDetails = month => month >= '2026-10';
   const state = {month:M.defaultMonth(data),region:M.defaultRegion(M.getReport(data,M.defaultMonth(data))),tab:'works',detail:null,filters:{search:'',direction:'',trend:'all'},limit:25,engine:'yandex'};
   let view = null, report = null, positionColumns = null, renderedMonth = null, currentDetail = null, lastOpener = null;
@@ -37,6 +38,7 @@
     Object.assign(state, changes);
     const monthReport = M.getReport(data,state.month);
     if (!M.rankingRegions(monthReport).some(item => item.id === state.region)) state.region = M.defaultRegion(monthReport);
+    if (state.detail && !monthReport.works.some(w => w.id === state.detail) && monthReport.works.some(w => w.id === mergedWorkIds.get(state.detail))) state.detail = mergedWorkIds.get(state.detail);
     if (state.detail && (state.tab !== 'works' || !hasWorkDetails(state.month) || !M.getReport(data,state.month)?.works.some(w => w.id === state.detail))) state.detail = null;
     try { history[replace ? 'replaceState' : 'pushState'](null,'',routeURL()); } catch (_) {}
     render(); if (focusTab) $('tab-' + state.tab).focus({preventScroll:true});
@@ -140,7 +142,7 @@
   function worksHTML() {
     if (!report.works.length) return pendingHTML('works');
     const details = hasWorkDetails(state.month);
-    return `<div class="works-heading"><h2>Работы за ${M.monthLabel(state.month).toLowerCase()}</h2></div><section class="surface"><table class="works-table${details ? '' : ' without-details'}"><thead><tr><th scope="col">Что сделали</th><th scope="col">Краткое описание</th><th scope="col">Для чего это нужно</th>${details ? '<th scope="col">Подробнее</th>' : ''}</tr></thead><tbody>${report.works.map(work => `<tr><td><h3 class="work-name">${esc(work.title)}</h3></td><td class="work-summary">${esc(work.summary)}</td><td data-label="Для чего это нужно">${work.why ? paragraphsHTML(work.why) : '—'}</td>${details ? `<td><button type="button" class="work-open" data-work="${esc(work.id)}" aria-label="Подробнее: ${esc(work.title)}">Подробнее${icon('arrow')}</button></td>` : ''}</tr>`).join('')}</tbody></table></section>`;
+    return `<div class="works-heading"><h2>Работы за ${M.monthLabel(state.month).toLowerCase()}</h2>${report.intro.map(paragraphsHTML).join('')}</div><section class="surface"><table class="works-table${details ? '' : ' without-details'}"><thead><tr><th scope="col">Что сделали</th><th scope="col">Краткое описание</th><th scope="col">Для чего это нужно</th>${details ? '<th scope="col">Подробнее</th>' : ''}</tr></thead><tbody>${report.works.map(work => `<tr><td><h3 class="work-name">${esc(work.title)}</h3></td><td class="work-summary">${esc(work.summary)}</td><td data-label="Для чего это нужно">${work.why ? paragraphsHTML(work.why) : '—'}</td>${details ? `<td><button type="button" class="work-open" data-work="${esc(work.id)}" aria-label="Подробнее: ${esc(work.title)}">Подробнее${icon('arrow')}</button></td>` : ''}</tr>`).join('')}</tbody></table></section>`;
   }
   function tableHTML(item, emphasize = false) {
     const isUrlMap = item.rows.length > 0 && item.rows.every(row => row.length === 3 && [row[1],row[2]].every(value => typeof value === 'string' && value.startsWith('/')));
@@ -172,7 +174,8 @@
     if (key === currentDetail && dialog.open) return;
     dialog.dataset.reportView = 'works'; $('detail-title').textContent = work.title; $('detail-meta').hidden = true;
     const sections = (work.sections || []).map(sectionHTML).join('');
-    $('detail-body').innerHTML = `<section class="actual-result"><h3>Что сделали</h3>${detailParagraphsHTML(work.result)}${work.resultBullets?.length ? `<ul class="result-bullets">${work.resultBullets.map(b => `<li>${strongHTML(b)}</li>`).join('')}</ul>` : ''}${sections}${(work.evidence || []).map(evidenceHTML).join('')}</section>`;
+    const evidence = (work.evidence || []).map(evidenceHTML).join('');
+    $('detail-body').innerHTML = `<section class="actual-result"><h3>Что сделали</h3>${detailParagraphsHTML(work.result)}${work.resultBullets?.length ? `<ul class="result-bullets">${work.resultBullets.map(b => `<li>${strongHTML(b)}</li>`).join('')}</ul>` : ''}${sections}${evidence ? `<section class="detail-section"><h3>Подтверждение результатов</h3>${evidence}</section>` : ''}</section>`;
     if (!dialog.open) { dialog.showModal(); document.body.classList.add('dialog-open'); }
     $('detail-body').scrollTop = 0; $('close-detail').focus({preventScroll:true}); currentDetail = key;
   }
