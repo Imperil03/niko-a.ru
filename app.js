@@ -7,6 +7,7 @@
   const paragraphsHTML = value => String(value ?? '').split(/\r?\n\s*\r?\n/).filter(p => p.trim()).map(p => `<p>${esc(p)}</p>`).join('');
   const strongHTML = value => esc(value).replace(/\*\*([^*\r\n]+)\*\*/g, '<strong>$1</strong>');
   const detailParagraphsHTML = value => String(value ?? '').split(/\r?\n\s*\r?\n/).filter(p => p.trim()).map(p => `<p>${strongHTML(p)}</p>`).join('');
+  const resultsTextHTML = value => String(value ?? '').split(/\r?\n\s*\r?\n/).filter(p => p.trim()).map(p => { const lines = p.split(/\r?\n/); return lines.every(line => line.startsWith('- ')) ? `<ul class="results-list">${lines.map(line => `<li>${strongHTML(line.slice(2))}</li>`).join('')}</ul>` : `<p>${strongHTML(p)}</p>`; }).join('');
   const number = value => new Intl.NumberFormat('ru-RU',{maximumFractionDigits:1}).format(value);
   const visitsLabel = value => value % 10 === 1 && value % 100 !== 11 ? 'визит' : [2,3,4].includes(value % 10) && ![12,13,14].includes(value % 100) ? 'визита' : 'визитов';
   const dateLabel = value => value ? new Intl.DateTimeFormat('ru-RU',{day:'2-digit',month:'2-digit',year:'numeric'}).format(new Date(value + 'T12:00:00Z')) : '';
@@ -165,8 +166,8 @@
   }
   function resultsHTML() {
     view = M.rankingsView(report.rankings);
-    let intro = report.intro.map(paragraphsHTML).join('');
-    if (report.conclusions.length) intro += '<p class="archive-conclusion-title">Выводы</p>' + report.conclusions.map(paragraphsHTML).join('');
+    let intro = (report.resultsIntro || report.intro).map(resultsTextHTML).join('');
+    if (report.conclusions.length) intro += '<p class="archive-conclusion-title">Выводы</p>' + report.conclusions.map(resultsTextHTML).join('');
     const reference = view?.after || view?.before || view?.start;
     const stateNote = !report.archive && view ? view.pending ? `${view.start?.date ? 'Начало работ — ' + dateLabel(view.start.date) + '. ' : 'Стартовый замер отсутствует. '}${view.before ? 'Прошлый замер — ' + dateLabel(view.before.date) + '. ' : ''}Новый замер ожидается. ${esc(reference.region)}. ${esc(reference.device)}.` : `${report.status === 'in_progress' ? 'Промежуточные данные. Итоговый отчёт будет подготовлен в конце месяца. ' : ''}Замеры Топвизора: ${view.before ? dateLabel(view.before.date) + ' — ' : ''}${dateLabel(view.after.date)}. ${esc(reference.region)}. ${esc(reference.device)}.` : '';
     const note = (view?.before && !view.metaMatch ? '<p class="metrics-note">Настройки замеров различаются. Динамику не сравниваем.</p>' : '') + (view?.notes || []).map(n=>`<p class="metrics-note">${esc(n)}</p>`).join('');
