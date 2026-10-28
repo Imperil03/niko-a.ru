@@ -103,6 +103,22 @@
       return true;
     });
   }
+  function sortRows(rows, engine = 'google') {
+    const primary = ENGINES.includes(engine) ? engine : 'google';
+    const secondary = ENGINES.find(value => value !== primary);
+    const collator = new Intl.Collator('ru', {numeric:true,sensitivity:'base'});
+    const position = value => Number.isInteger(value) && value > 0 ? [0,value] : value === null ? [1,0] : [2,0];
+    const comparePosition = (a,b,key) => {
+      const left = position(a[key]?.after), right = position(b[key]?.after);
+      return left[0] - right[0] || left[1] - right[1];
+    };
+    const compareId = (a,b) => {
+      const left = String(a.id ?? ''), right = String(b.id ?? '');
+      return collator.compare(left,right) || (left < right ? -1 : left > right ? 1 : 0);
+    };
+    return rows.slice().sort((a,b) => comparePosition(a,b,primary) || comparePosition(a,b,secondary) ||
+      collator.compare(String(a.query ?? ''),String(b.query ?? '')) || compareId(a,b));
+  }
   function validateData(data) {
     const errors = [], check = (test, message) => { if (!test) errors.push(message); };
     if (!data?.project || !Array.isArray(data.reports)) return ['Нет настроек проекта или месяцев.'];
@@ -158,7 +174,36 @@
         if (rankings.before && rankings.after) check(rankings.before.date < rankings.after.date, `${label}: неверный порядок дат.`);
         if (rankings.start) check(rankings.start.date <= (rankings.before?.date || rankings.after?.date || rankings.start.date), `${label}: первый замер позже отчётного периода.`);
       }
-      if (report.traffic) check(Number.isInteger(report.traffic.visits) && report.traffic.visits >= 0, `${label}: неверное число визитов.`);
+      if (report.traffic) {
+        const traffic = report.traffic;
+        check(typeof traffic === 'object' && !Array.isArray(traffic), `${label}: неверные данные посещаемости.`);
+        check(Number.isSafeInteger(traffic.visits) && traffic.visits >= 0, `${label}: неверное число визитов.`);
+        if (own(traffic,'kind')) check(['all_sources','search'].includes(traffic.kind), `${label}: неизвестный вид посещаемости.`);
+        if (own(traffic,'complete')) check(typeof traffic.complete === 'boolean', `${label}: неверный статус посещаемости.`);
+        for (const key of ['sourceLabel','note']) if (own(traffic,key)) check(typeof traffic[key] === 'string', `${label}: неверное пояснение посещаемости.`);
+        const dailyTraffic = traffic.kind === 'all_sources' || ['periodStart','periodEnd','daily','evidenceUrl'].some(key => own(traffic,key));
+        if (dailyTraffic) {
+          const validPeriod = validDate(traffic.periodStart) && validDate(traffic.periodEnd) && traffic.periodStart <= traffic.periodEnd;
+          check(validPeriod, `${label}: неверный период посещаемости.`);
+          check(typeof traffic.complete === 'boolean', `${label}: отсутствует статус полноты посещаемости.`);
+          const daily = Array.isArray(traffic.daily) ? traffic.daily : [];
+          check(daily.length > 0, `${label}: нет дневных значений посещаемости.`);
+          let previous = null, total = 0, validValues = true;
+          for (const day of daily) {
+            const validDay = !!day && typeof day === 'object' && !Array.isArray(day) && validDate(day.date);
+            const validVisits = !!day && Number.isSafeInteger(day.visits) && day.visits >= 0;
+            check(validDay && validVisits, `${label}: неверное дневное значение посещаемости.`);
+            if (validDay) {
+              check(validPeriod && day.date >= traffic.periodStart && day.date <= traffic.periodEnd, `${label}: день посещаемости вне периода.`);
+              check(previous === null || previous < day.date, `${label}: дни посещаемости повторяются или не упорядочены.`);
+              previous = day.date;
+            }
+            if (validVisits) total += day.visits; else validValues = false;
+          }
+          check(validValues && total === traffic.visits, `${label}: сумма дневных визитов не совпадает с итогом.`);
+          check(typeof traffic.evidenceUrl === 'string' && traffic.evidenceUrl.startsWith('evidence/') && /\.xlsx$/i.test(traffic.evidenceUrl) && safeHref(traffic.evidenceUrl) === traffic.evidenceUrl, `${label}: неверное приложение посещаемости.`);
+        }
+      }
       check(Array.isArray(report.works), `${label}: отсутствует список работ.`);
       check(new Set((report.works || []).map(w => w.id)).size === report.works?.length, `${label}: повторные работы.`);
       for (const work of report.works || []) {
@@ -183,8 +228,12 @@
         }
         for (const evidence of work.evidence || []) {
           if (own(evidence,'text')) check(typeof evidence.text === 'string', `${label}: неверное описание подтверждения.`);
-          check(['link','comparison','table'].includes(evidence.type), `${label}: неизвестное подтверждение.`);
+          check(['link','comparison','table','image'].includes(evidence.type), `${label}: неизвестное подтверждение.`);
           if (evidence.type === 'link') check(!!safeHref(evidence.url), `${label}: небезопасное подтверждение.`);
+          if (evidence.type === 'image') {
+            check(!!safeImageHref(evidence.url), `${label}: изображение должно находиться внутри evidence.`);
+            check(typeof evidence.alt === 'string' && evidence.alt.trim(), `${label}: у изображения отсутствует описание.`);
+          }
           if (evidence.type === 'comparison' && (own(evidence,'beforeImage') || own(evidence,'afterImage'))) {
             check(!!safeImageHref(evidence.beforeImage) && !!safeImageHref(evidence.afterImage), `${label}: сравнение должно содержать два изображения внутри evidence.`);
             check(['beforeAlt','afterAlt'].every(key => typeof evidence[key] === 'string' && evidence[key].trim()), `${label}: у снимков отсутствует описание.`);
@@ -194,5 +243,5 @@
     }
     return errors;
   }
-  return {ENGINES, months, monthLabel, getReport, defaultMonth, rankingRegions, defaultRegion, selectedRankings, safeHref, safeImageHref, validDate, normalize, rankChange, rankingsView, filterRows, validateData};
+  return {ENGINES, months, monthLabel, getReport, defaultMonth, rankingRegions, defaultRegion, selectedRankings, safeHref, safeImageHref, validDate, normalize, rankChange, rankingsView, filterRows, sortRows, validateData};
 });
